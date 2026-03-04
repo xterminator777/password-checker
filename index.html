@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="card">
+      <h1>Password Strength Checker</h1>
+      <p class="sub">Type a password and get instant feedback.</p>
+
+      <label class="label" for="pw">Password</label>
+      <div class="row">
+        <input id="pw" type="password" placeholder="Enter password…" autocomplete="new-password" />
+        <button id="toggle" type="button" class="btn secondary" aria-label="Show password">Show</button>
+      </div>
+
+      <div class="meter-wrap" aria-label="Strength meter">
+        <div id="meter" class="meter"></div>
+      </div>
+
+      <div class="status">
+        <span id="badge" class="badge">—</span>
+        <span id="entropy" class="entropy">Entropy: —</span>
+      </div>
+
+      <ul id="tips" class="tips"></ul>
+
+      <footer class="footer">
+        <span>Built by Hugo ✨</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
